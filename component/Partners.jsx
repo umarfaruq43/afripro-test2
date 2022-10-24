@@ -32,9 +32,19 @@ const Partners = () => {
                         fontSize={["md", null, "lg"]}
                         color="brand.light"
                     >
-                        Afri-Pro Services Cyber holds, operates to, and delivers
+                        {/* Afri-Pro Services Cyber holds, operates to, and delivers
                         its cybersecurity services in accordance with the
-                        following certifications and accreditations
+                        following certifications and accreditations */}
+                        Our diverse client portfolio ranges from SMEs to
+                        multinationals across various industries, government to
+                        non-Governmental across different geographical locations
+                        demonstrate our footprints, and trust our clients have
+                        in us to help with improving their security maturity. We
+                        are known for the values we deliver for our client, and
+                        that’s why our clients trust us with the protection of
+                        their business. Some of our clients include: Vodacom,
+                        Finca, Exim Bank, NBC, NAPSA, Stanbic, Cloudware
+                        Technologies, TCRA, KoloPay
                     </Text>
                 </Box>
                 <SimpleGrid
@@ -49,7 +59,7 @@ const Partners = () => {
                                 key={i}
                                 src={logo.images}
                                 alt=""
-				w="100%"
+                                w="100%"
                                 h={["42px", "80px"]}
                             />
                         );

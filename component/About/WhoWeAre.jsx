@@ -31,16 +31,41 @@ const WhoWeAre = () => {
                                 {" "}
                                 Who we are
                             </Text>
-                            <Text maxW={["100%", null, "415px"]}>
-                                Cyber security is all that we do, helping you
-                                secure your information technology assets and
-                                protecting your business is our priority. We are
-                                a team of highly dedicated security specialists,
-                                powered by strategic and emerging security
-                                vendor partners, helping us fully focus on
-                                protecting our clients across different
-                                verticals and industries.
-                            </Text>
+                            <Box maxW={["100%", null, "415px"]}>
+                                <Text>
+                                    Afri-Pro Services Ltd is a technology
+                                    oriented professional services firm fully
+                                    focused on delivering expert cybersecurity
+                                    and digital services to clients of different
+                                    sizes across various industries.
+                                </Text>
+                                <Text>
+                                    Our industry leading team of experienced
+                                    consultants deliver end-to-end cyber
+                                    capabilities, either as bespoke engagements
+                                    customized to client’s specific needs or as
+                                    fully-managed services. Our capabilities
+                                    comprise a full suite of cyber security
+                                    services, all focussed on improving our
+                                    clients’ cyber resilience, and ultimately
+                                    enabling them to protect their business and
+                                    withstand, cyber-attacks.
+                                </Text>
+
+                                <Text>
+                                    As a provider of advanced cyber security
+                                    services, we are fully focussed on
+                                    delivering expert services of world class
+                                    standards to meet our client satisfaction.
+                                    We believe that by focussing on our core
+                                    business, our clients benefit from levels of
+                                    agility, expertise, and quality that
+                                    wouldn’t be delivered from larger,
+                                    generalist, service providers and
+                                    consultancy houses, to whom cyber security
+                                    is viewed as a supplementary revenue stream.
+                                </Text>
+                            </Box>
                         </Box>
                     </Flex>
                     <Flex

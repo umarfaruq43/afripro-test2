@@ -20,6 +20,7 @@ import OffensiveSecurity from "./OffensiveSecurity";
 import Partners from "../Partners";
 import JoinTeam from "../JoinTeam";
 import SecurityDetection from "./SecurityDetection";
+import SecurityAdvisory from "./SecurityAdvisory";
 import { useRouter } from "next/router";
 const Content = () => {
     const router = useRouter();
@@ -31,6 +32,8 @@ const Content = () => {
     useEffect(() => {
         if (router && router.asPath == "/service#detect") {
             setActive(2);
+        } else if (router && router.asPath == "/service#advisory") {
+            setActive(3);
         }
     }, []);
 
@@ -42,7 +45,7 @@ const Content = () => {
             <Box mt="40px">
                 {active == 1 ? <OffensiveSecurity /> : ""}
                 {active == 2 ? <SecurityDetection /> : ""}
-                {/* {active == 3 ? <SecurityDetection /> : ""} */}
+                {active == 3 ? <SecurityAdvisory /> : ""}
             </Box>
             <Partners />
             <JoinTeam />
@@ -72,7 +75,7 @@ const ServiceNav = ({ active, handleActive }) => {
                     borderRadius="0"
                     onClick={() => handleActive(1)}
                 >
-                    {active == 1  ? (
+                    {active == 1 ? (
                         <Icon
                             as={BsFillArrowDownSquareFill}
                             width="22px"
@@ -124,7 +127,7 @@ const ServiceNav = ({ active, handleActive }) => {
                     </Text>
                 </Button>
 
-                {/* <Button
+                <Button
                     // minW="350px"
                     mb="-3px"
                     w="100%"
@@ -156,11 +159,9 @@ const ServiceNav = ({ active, handleActive }) => {
                     >
                         Security Compliance and Advisory
                     </Text>
-                </Button> */}
+                </Button>
                 {/* <Box w="100%" h="1px"></Box> */}
             </SimpleGrid>
         </Box>
     );
 };
-
-

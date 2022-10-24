@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { ButtonFill } from "../Buttons";
 import ScreenWidth from "../../Layout/ScreenWidth";
@@ -11,7 +11,7 @@ const Report = () => {
             bgRepeat="no-repeat"
             py={["64px", null, "80px"]}
             bgPos="left center"
-	    bgSize="contain"
+            bgSize="contain"
         >
             <ScreenWidth>
                 <Box>
@@ -30,12 +30,14 @@ const Report = () => {
                         security issues.
                     </Text>
                     <Box mt="40px" textAlign="center">
-                        <ButtonFill
-                            maxW={["100%", null, "147px"]}
-                            mx="auto"
-                            text="Contact us"
-                            style={{ width: "100%" }}
-                        />
+                        <Link href="/contact" _hover={{ textDecor: "none" }}>
+                            <ButtonFill
+                                maxW={["100%", null, "147px"]}
+                                mx="auto"
+                                text="Contact us"
+                                style={{ width: "100%" }}
+                            />
+                        </Link>
                     </Box>
                 </Box>
             </ScreenWidth>

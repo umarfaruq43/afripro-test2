@@ -17,6 +17,8 @@ const SecurityDetection = () => {
                 <Detection />
                 <ManageSecurity mt="80px" />
                 <ThreatSecurity mt="56px" />
+                <Value />
+                <IncidentResponse mt="56px" />
             </ScreenWidth>
         </Box>
     );
@@ -57,18 +59,15 @@ const Detection = () => {
                             monitoring technologies with your existing IT and
                             security assets to ensure there is comprehensive
                             coverage for your security monitoring and detection
-                            process.
-                        </Text>
-                        <Text mt="8px">
-                            In addition, we also offer value added first line
-                            support to our clients across different security
-                            technologies through our managed Security and SOC
-                            services team. As a value-added partner of the
-                            leading technologies vendors such as Microsoft,
+                            process. In addition, we also offer value added
+                            first line support to our clients across different
+                            security technologies through our managed Security
+                            and SOC services team. As a value-added partner of
+                            the leading technologies vendors such as Microsoft,
                             Splunk, IBM, Microfocus, Rapid 7, Sumologic, AT&T,
-                            and Fortinet etc, our team of consultants have
+                            Fortinet etc, our team of consultants have
                             experience and hands on skills to implement and
-                            manage these technologies.
+                            manage these technologies
                         </Text>
                     </Box>
                 </Box>
@@ -120,7 +119,51 @@ const ManageSecurity = ({ ...props }) => {
                         <Text mt="8px">
                             Afri-Pro Services provides a range of managed
                             services delivered from our 24/7 Security Operations
-                            Centre (SOC).
+                            Centre (SOC) called{" "}
+                            <Text as="span" fontWeight="bold">
+                                “Logik Lab”
+                            </Text>
+                            .
+                        </Text>
+                    </Box>
+                </Box>
+            </Box>
+        </Flex>
+    );
+};
+
+const Value = ({ ...props }) => {
+    return (
+        <Flex
+            {...props}
+            flexDir={["column", null, "row"]}
+            justify="space-between"
+            align="center"
+            gap="32px"
+        >
+            <Box>
+                <Image src="images/Team/future.png" alt="Future Image" />
+            </Box>
+
+            <Box w={["100%", null, "50%"]}>
+                <Box
+                    maxW={["100%", null, "496px"]}
+                    fontSize={["16px", null, "18px"]}
+                >
+                    <Text fontWeight="400" fontSize={["xl2", null, "4l"]}>
+                        Value Added System Integration
+                    </Text>
+
+                    <Box fontSize="18px">
+                        <Text mt="24px">
+                            As a value-added authorized partner to some of the
+                            leading security technology vendors, we help our
+                            clients with the deployment, configuration and
+                            implementation of various cyber security technology
+                            controls, integration with the required IT assets,
+                            and legacy systems to help our client’s meet their
+                            both standard and non-standard security
+                            requirements.
                         </Text>
                     </Box>
                 </Box>
@@ -144,7 +187,7 @@ const ThreatSecurity = ({ ...props }) => {
                     fontSize={["16px", null, "18px"]}
                 >
                     <Text fontWeight="400" fontSize={["xl2", null, "4l"]}>
-                        Threat Security Services
+                        Threat Intelligence Services
                     </Text>
 
                     <Box fontSize="18px">
@@ -166,6 +209,61 @@ const ThreatSecurity = ({ ...props }) => {
             </Box>
             <Box>
                 <Image src="images/Team/future.png" alt="Future Image" />
+            </Box>
+        </Flex>
+    );
+};
+
+const IncidentResponse = ({ ...props }) => {
+    return (
+        <Flex
+            {...props}
+            flexDir={["column", null, "row"]}
+            justify="space-between"
+            align="center"
+            gap="32px"
+        >
+            <Box>
+                <Image src="images/Team/future.png" alt="Future Image" />
+            </Box>
+
+            <Box w={["100%", null, "50%"]}>
+                <Box
+                    maxW={["100%", null, "496px"]}
+                    fontSize={["16px", null, "18px"]}
+                >
+                    <Text fontWeight="400" fontSize={["xl2", null, "4l"]}>
+                        Incident Response & Forensic Services
+                    </Text>
+
+                    <Box fontSize="18px">
+                        <Text mt="24px">
+                            {" Afri-Pro's "}Incident Response (IR) and digital
+                            forensics team delivers cutting edge services of
+                            cyber security incident response through our expert
+                            CIRT team to organizations to help minimize and
+                            recover from the impact of incidents to business
+                            operation and significantly reduce turnaround time.
+                        </Text>
+                        <Text mt="8px">
+                            Our forensic services are delivered by a team of
+                            forensic experts, experienced security engineers,
+                            incident responders, malware, and reverse
+                            engineering specialists with years of experience
+                            across several IT and security domains. Incident
+                            response and forensics cases are knowledge-intensive
+                            and rely heavily on having experienced, trained
+                            professionals at hand.
+                        </Text>
+
+                        <Text mt="8px">
+                            All our incident response engagements are planned,
+                            delivered, and properly documented to support
+                            business recovery actions taken by our clients after
+                            the investigation is over.
+                        </Text>
+                    </Box>
+                </Box>
             </Box>
         </Flex>
     );

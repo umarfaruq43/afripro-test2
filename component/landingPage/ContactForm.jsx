@@ -113,8 +113,9 @@ const ContactForm = () => {
                 message: "",
                 phonenumber: "",
                 email: "",
+
             });
-            setPhone("");
+            setPhone("")
         }
     }, [formStatus, reset]);
 
